@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getNotes, deleteNote, } from '../utils/storage';
+import { getNotes, deleteNote } from '../utils/storage';
 import Card from './Card';
 import Modal from './Modal';
 
@@ -24,10 +24,6 @@ const NotesList = () => {
     setIsModalOpen(false);
   };
 
-  const handleUpdate = () => {
-    // Logic for updating the note can be added here
-    alert('Update functionality not implemented yet!');
-  };
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
@@ -49,7 +45,6 @@ const NotesList = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         note={selectedNote}
-        onUpdate={handleUpdate}
         onDelete={handleDelete}
       />
     </div>
