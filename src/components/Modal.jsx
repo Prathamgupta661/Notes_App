@@ -9,12 +9,7 @@ const Modal = ({ isOpen, onClose, note, onUpdate, onDelete }) => {
         <h2 className="text-2xl font-bold mb-4 break-words">{note.title}</h2>
         <p className="text-gray-600 mb-6 break-words">{note.content}</p>
         <div className="flex justify-end gap-4">
-          <button
-            onClick={onUpdate}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          >
-            Update
-          </button>
+          
           <button
             onClick={onDelete}
             className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"

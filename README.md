@@ -6,7 +6,7 @@ A simple React-based note-taking application built with Vite. This app allows us
 
 - Add new notes with a title and content.
 - View a list of all notes.
-- Edit and delete notes.
+- And delete notes.
 - Notes are persisted in `localStorage`.
 - Responsive and clean UI styled with Tailwind CSS.
 
